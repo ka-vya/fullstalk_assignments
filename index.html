@@ -11,38 +11,32 @@
          padding: 0;
          margin: 0;
          box-sizing: border-box;
+         font-family: Arial, Helvetica, sans-serif;
          margin: 6px;
      }
-     h2{
-         padding: 5px;
-         color: cornsilk;
-         background-color: deeppink;
-
-     }
-     h2:hover{
-         background-color: blueviolet;
-         cursor: pointer;
-     }
-     div::selection{
-         background-color: cyan;
-     }
-     input:focus{
-         background-color: darkgoldenrod;
-     }
-     h2::before{
-         content: "iam before";
-         color: darkolivegreen;
-         font-size: 1rem;
+   div.parent{
+       background-color: black;
+       min-height: 500px;
+   }
+   div.child{
+       background-color: coral;
+       height: 100px;
+       width: 100px;
+       border-radius: 50%;
+       transition-duration: 0.5s;
+       transition-timing-function: ease-out;
+   }
+   div.parent:hover div.child{
+       background-color: green;
+       transform:translateX(500px)
 
 
-     }
+   }
+
+   
 </style>
 <body>
-    <h2>iam a heading</h2>
-    <div>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti excepturi beatae quos ab. Est corrupti consequuntur repellat provident earum tempora laborum nihil, eaque veritatis, minima accusamus enim modi, ipsa dolorem.
-    </div>
-    <input type="text"/>
-    
+    <div class="parent"><div class="child">S</div>
+   
 </body>
 </html>
