@@ -1,27 +1,14 @@
-//function greet(name='abc',age='22'){
-    //console.log('hey  ' + name + ' your age is  ' + age)
-    
-//}
-// greet()
-
-//function add(a=0,b=0){
- // var sum=a+b
- //  return sum
-//}
+var button=document.querySelector('button')
+var input=document.querySelector('input')
+var list=document.querySelector('ul')
 
 
-
-var add=function (a=0,b=0) =>{
-    var sum=a+b
-   return sum
- }
-
- console.log(add(10,99))
- 
-
-
- var greet = function(name='abc',age='22'){
-    console.log('hey  ' + name + ' your age is  ' + age)
-    
+const callbackfunc = (event) =>{
+    const inputValue=input.value
+    const element=document.createElement('li')
+    const textNode=document.createTextNode(input.value)
+    element.appendChild(textNode)
+    list.appendChild(element)
+   
 }
-greet()
+button.addEventListener('click',callbackfunc)
