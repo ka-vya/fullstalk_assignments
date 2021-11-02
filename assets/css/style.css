@@ -15,12 +15,10 @@ header{
 }
 div.parent{
     height: 500px;
-    width: 500px;
-   background-color: blue;
-    display: flex;
-    align-items: center;
+   background-color: #111;
 
 }
+
 img.social{
     width: 20px;
     margin: 0px 10px;
